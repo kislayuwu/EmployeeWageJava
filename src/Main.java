@@ -6,14 +6,22 @@ public class Main {
         int check = ((int) (Math.random() * 10)) % 3;
         if (check == 0) {
             emp1.attendance = 1;
-            System.out.println(emp1.name + " is present");
         } else if (check == 1) {
             emp1.attendance = 0;
-            System.out.println(emp1.name + " is absent");
         } else {
             emp1.attendance = -1;
             emp1.fullDayHour=4;
-            System.out.println(emp1.name + " is a part-time employee");
+        }
+
+        switch (emp1.attendance){
+            case 0:
+                System.out.println(emp1.name + " is absent");
+                break;
+            case 1:
+                System.out.println(emp1.name + " is present");
+                break;
+            case -1:
+                System.out.println(emp1.name + " is a part-time employee");
         }
 
         //daily wage of employee
