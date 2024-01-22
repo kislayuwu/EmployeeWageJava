@@ -28,11 +28,18 @@ public class Main {
         Main m1 = new Main();
         System.out.println("Daily wage of " + emp1.name + " is " + m1.dailyWageCalculator(emp1));
 
+        //monthly salary of employee
+        System.out.println("Monthly salary of "+emp1.name+" is "+m1.monthlyWage(emp1));
+
 
     }
 
     //Daily wage calculator function
     double dailyWageCalculator(Employee e) {
         return e.wagePerHour * e.fullDayHour;
+    }
+    //Monthly wage
+    double monthlyWage(Employee e){
+        return dailyWageCalculator(e)*20;
     }
 }
