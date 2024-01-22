@@ -12,9 +12,11 @@ public class Main {
             System.out.println(emp1.name + " is absent");
         } else {
             emp1.attendance = -1;
+            emp1.fullDayHour=4;
             System.out.println(emp1.name + " is a part-time employee");
         }
 
+        //daily wage of employee
         Main m1 = new Main();
         System.out.println("Daily wage of " + emp1.name + " is " + m1.dailyWageCalculator(emp1));
 
