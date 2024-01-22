@@ -3,10 +3,12 @@ public class Employee {
     Integer id;
     Integer wagePerHour;
     Integer attendance;
+    Integer fullDayHour;
 
-    Employee(String n,Integer id,Integer w){
+    Employee(String n,Integer id,Integer w,Integer f){
         this.name=n;
         this.id=id;
         this.wagePerHour=w;
+        this.fullDayHour=f;
     }
 }
